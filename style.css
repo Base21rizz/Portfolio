@@ -160,3 +160,83 @@ nav ul li a:hover::after{
     transform: translateY(-10px);
 }
 /* ------------services-------------- */
+/* ------------portfolio-------------- */
+#portfolio{
+    padding: 50px 0;
+    margin: 20px;
+}
+#portfolio h1{
+    margin-left: 40px;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 40px;
+}
+.work{
+    display: block;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    margin: 0 30px;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+.layer{
+    background: linear-gradient(rgb(0,0,0,0.6),rebeccapurple);
+    position: absolute;
+    display:flex;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    transition: height 0.5s;
+    overflow: hidden;
+    font-size: 14px;
+}
+.work:hover .layer{
+    height: 100%;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.layer h3{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.layer a{
+    text-decoration: none;
+    margin-top: 20px;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #fff;
+    color: rebeccapurple;
+    text-align: center;
+    line-height: 60px;
+}
+.btn{
+    display: block;
+    margin: 40px auto;
+    width: fit-content;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    border: 1px solid rebeccapurple;
+    padding: 14px 50px;
+    transition: background 0.3s;
+}
+.btn:hover{
+    background: rebeccapurple;
+}
+/* ------------portfolio-------------- */
