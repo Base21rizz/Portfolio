@@ -17,9 +17,8 @@ body{
     background-position: center;
 }
 nav img{
-    size: 140px;
-    height: 300px;
-    width: 400px;
+    height: 350px;
+    width: 500px;
     margin: -50px;
     margin-top: -75px;
 }
@@ -166,42 +165,41 @@ nav ul li a:hover::after{
     margin: 20px;
 }
 #portfolio h1{
-    margin-left: 40px;
+    margin-left: 3rem;
 }
 .work-list{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    grid-gap: 40px;
-    margin-top: 40px;
+    grid-gap: 50px;
+    margin: 70px 50px;
 }
 .work{
     display: block;
     overflow: hidden;
     position: relative;
     border-radius: 10px;
-    margin: 0 30px;
 }
 .work img{
     width: 100%;
+    display: block;
     border-radius: 10px;
     transition: transform 0.5s;
 }
 .layer{
-    background: linear-gradient(rgb(0,0,0,0.6),rebeccapurple);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
     position: absolute;
-    display:flex;
     left: 0;
     bottom: 0;
     width: 100%;
     height: 0;
+    background: linear-gradient(rgb(0,0,0,0.6),rebeccapurple);
     border-radius: 10px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
     transition: height 0.5s;
     overflow: hidden;
-    font-size: 14px;
 }
 .work:hover .layer{
     height: 100%;
@@ -210,29 +208,27 @@ nav ul li a:hover::after{
     transform: scale(1.1);
 }
 .layer h3{
-    font-weight: bold;
     margin-bottom: 20px;
+    font-weight: bold;
+    font-size: x-large;
 }
 .layer a{
-    text-decoration: none;
     margin-top: 20px;
-    display: block;
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: #fff;
     color: rebeccapurple;
-    text-align: center;
+    background: #fff;
     line-height: 60px;
 }
 .btn{
     display: block;
-    margin: 40px auto;
-    width: fit-content;
-    color: #fff;
     text-decoration: none;
-    border-radius: 6px;
+    margin: 50px auto;
+    color: #fff;
     border: 1px solid rebeccapurple;
+    border-radius: 6px;
+    width: fit-content;
     padding: 14px 50px;
     transition: background 0.3s;
 }
