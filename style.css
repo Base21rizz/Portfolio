@@ -21,10 +21,10 @@ body{
     background-position: right;
 }
 nav img{
-    height: 400px;
-    width: 500px;
+    height: 350px;
+    width: 400px;
     margin: -50px;
-    margin-top: -75px;
+    margin-top: -120px;
 }
 nav{
     display: flex;
