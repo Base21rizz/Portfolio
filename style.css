@@ -11,7 +11,7 @@ html
 }
 body{
     background-color: #080808;
-    color: lavender;
+    color: #e6e6fa;
 }
 #header{
     background-image: url(images/background.png);
@@ -21,7 +21,7 @@ body{
     background-position: right;
 }
 nav img{
-    height: 350px;
+    height: 400px;
     width: 500px;
     margin: -50px;
     margin-top: -75px;
@@ -134,7 +134,7 @@ nav ul li a:hover::after{
     grid-gap: 40px;
 }
 .services-list div{
-    padding: 20px;
+    padding: 70px;
     background: #262626;
     margin: 40px;
     border-radius: 10px;
